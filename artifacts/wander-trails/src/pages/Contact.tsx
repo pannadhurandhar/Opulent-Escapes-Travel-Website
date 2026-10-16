@@ -13,7 +13,7 @@ export default function Contact() {
       <aside className="contact-aside"><span className="eyebrow" style={{ color: '#f7b582' }}>Here to help</span><h2>Good trips begin with a hello.</h2><p>Whether you’ve got a destination in mind or just a feeling, share it with us. We’ll help you plan around the things that matter to your group.</p>
         <div className="contact-detail"><Mail size={16} style={{ verticalAlign: 'middle', marginRight: 8 }} />info@wandertrails.com</div>
         <div className="contact-detail"><Phone size={16} style={{ verticalAlign: 'middle', marginRight: 8 }} />+91 98765 43210</div>
-        <div className="contact-detail"><MapPin size={16} style={{ verticalAlign: 'middle', marginRight: 8 }} />Kochi, Kerala, India</div>
+        <div className="contact-detail"><MapPin size={16} style={{ verticalAlign: 'middle', marginRight: 8 }} />Mumbai, Maharashtra, India</div>
         <a href={`https://wa.me/919876543210?text=${encodeURIComponent(`Hello Wander Trails, I would like to plan a trip${destination ? ` to ${destination}` : ''}.`)}`} target="_blank" rel="noreferrer" className="button-primary" style={{ marginTop: 24, textDecoration: 'none', background: '#f5a16c' }}><MessageCircle size={17} /> WhatsApp us</a>
       </aside>
       <div style={{ background: '#fff', border: '1px solid #ece7dc', borderRadius: 22, padding: '30px clamp(20px,4vw,42px)' }}>
