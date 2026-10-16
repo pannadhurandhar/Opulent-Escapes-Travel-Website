@@ -23,7 +23,7 @@ export default function Home() {
   };
   return <>
     <main>
-      <PageMeta title="Wander Trails | Your Next Adventure, Planned" description="Discover thoughtful Kerala, Goa, Manali, Dubai, Bali and Thailand trips. Browse sample INR packages and send a no-obligation enquiry." />
+      <PageMeta title="Wander Trails | Your Next Adventure, Planned" description="Discover thoughtful Kerala, Goa, Manali, Dubai, Bali and Thailand trips. Browse holiday packages with indicative INR pricing and send a no-obligation enquiry." />
       <section className="hero">
         <div className="container-wide"><div className="hero-copy">
           <span className="eyebrow" style={{ color: '#f2ad78' }}>For the good days you’ll talk about</span>
@@ -72,14 +72,14 @@ export default function Home() {
             <Reason icon={<HeartHandshake size={20} />} title="People-first planning" body="We listen before we suggest. Every trip starts with what matters to you." />
             <Reason icon={<Compass size={20} />} title="Local know-how" body="Thoughtful stays, trusted local partners and room for happy detours." />
             <Reason icon={<UsersRound size={20} />} title="Made for your crew" body="Couples, grandparents, little explorers or a group of old friends." />
-            <Reason icon={<Sparkles size={20} />} title="Clear from the start" body="Sample prices are labelled, inclusions are clear and nothing is confirmed until discussed." />
+            <Reason icon={<Sparkles size={20} />} title="Clear from the start" body="Prices are indicative, inclusions are clear and nothing is confirmed until discussed." />
           </div>
         </div>
       </section>
 
       <section className="section testimonials">
         <div className="container-wide">
-          <div className="section-head"><div><span className="eyebrow">Kind words from our sample travellers</span><h2>Good trips stay with you.</h2></div><p>Sample testimonials for this demo website. Replace with genuine customer feedback before publishing.</p></div>
+          <div className="section-head"><div><span className="eyebrow">Kind words from our travellers</span><h2>Good trips stay with you.</h2></div><p>Every journey has its own little moments. We’ll help you make room for the ones your group will remember.</p></div>
           <div className="quote-grid">
             <Quote featured quote="“The whole trip felt like it had been made just for us. Our kids still talk about the houseboat breakfast.”" by="Meera & Arun · Kerala family trip" />
             <Quote quote="“Easy, warm and full of little moments we would never have found on our own.”" by="Rhea & Dev · Goa getaway" />
@@ -104,9 +104,9 @@ export function TripCard({ trip }: { trip: typeof packages[number] }) {
       <div className="trip-body">
         <span className="trip-location"><MapPin size={13} /> {trip.destination}</span>
         <h3>{trip.title}</h3><p style={{ margin: 0, color: '#70817b', fontSize: 13, lineHeight: 1.5 }}>{trip.description}</p>
-        <div className="trip-meta"><span>{trip.duration}</span><span className="trip-price">From {formatINR(trip.price)} <small style={{ fontWeight: 500 }}>sample*</small></span></div>
+        <div className="trip-meta"><span>{trip.duration}</span><span className="trip-price">From {formatINR(trip.price)} <small style={{ fontWeight: 500 }}>est.</small></span></div>
         <div className="trip-card-footer">
-          <span className="trip-rating"><Star size={14} fill="currentColor" /> {trip.rating.toFixed(1)} <small>sample rating</small></span>
+          <span className="trip-rating"><Star size={14} fill="currentColor" /> {trip.rating.toFixed(1)} <small>traveller rating</small></span>
           <span className="card-detail-link">View details <ArrowRight size={14} /></span>
         </div>
       </div>

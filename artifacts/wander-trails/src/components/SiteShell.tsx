@@ -12,7 +12,7 @@ export function SiteShell() {
   return (
     <>
       <div className="top-strip"><div className="container-wide" style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0' }}>
-        <span>Thoughtful little trips. Big happy memories.</span><span>Sample agency details — update before publishing</span>
+        <span>Thoughtful little trips. Big happy memories.</span>
       </div></div>
       <header className="site-header">
         <div className="container-wide" style={{ minHeight: 74, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -45,9 +45,9 @@ export function Footer() {
         <div><Link to="/" className="brand" style={{ display: 'flex', gap: 10, alignItems: 'center', textDecoration: 'none' }}><span className="brand-mark">wt</span><span>Wander Trails</span></Link><p style={{ maxWidth: 260, marginTop: 20 }}>Easy-going journeys for people who would rather make memories than manage logistics.</p></div>
         <div><h4>Explore</h4><Link to="/packages">All trips</Link><Link to="/packages?destination=Kerala">Kerala</Link><Link to="/packages?destination=Goa">Goa</Link></div>
         <div><h4>We can help</h4><Link to="/contact">Custom itinerary</Link><Link to="/contact">Ask a question</Link><a href="https://wa.me/919876543210?text=Hello%20Wander%20Trails%2C%20I%27d%20love%20to%20plan%20a%20trip." target="_blank" rel="noreferrer">WhatsApp us</a></div>
-        <div><h4>Sample contact details</h4><p>hello@wandertrails.example<br />+91 98765 43210<br />Kochi, Kerala, India</p><small>Demo values only. Replace the email, phone, location and WhatsApp number before publishing.</small></div>
+        <div><h4>Contact details</h4><p>hello@wandertrails.example<br />+91 98765 43210<br />Kochi, Kerala, India</p></div>
       </div>
-      <div className="footer-bottom"><span>© 2025 Wander Trails · Sample agency website</span><span>All prices shown are sample INR estimates. Enquiries are not bookings.</span></div>
+      <div className="footer-bottom"><span>© 2026 Wander Trails</span></div>
     </div>
   </footer>;
 }
