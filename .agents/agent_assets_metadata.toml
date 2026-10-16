@@ -14,3 +14,17 @@ mtime_ms = 1792147260371
 storage_uri = "gcs://replit-rams-assets-sisko/rams/assets/repl:54dfea8f-70bd-44f2-8bdd-f80ac0507d41/84c6843a-a8a3-4536-9ee7-70ed0e5f443f/98f1b603-7ef0-455c-9d14-5f687ebecf0d"
 storage_version_token = "1792147268460973"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "XprxsVaKSIaEbwrCBEugW"
+uri = "file://generated-artifacts/wander-trails-source.zip"
+type = "unspecified"
+title = "Wander Trails project source ZIP"
+description = "Download the complete project source bundle with assets and setup files; excludes installed dependencies, local caches, and Git history."
+logical_id = "10b75d0e-0fab-448a-b752-5612ef10af77"
+content_hash = "sha256:94e52da6d0aa0ac1ee9097e7d65fe306b33a7505acb12f5f3aba6af0316e0520"
+size = 1263579
+mtime_ms = 1792147497603
+storage_uri = "gcs://replit-rams-assets-sisko/rams/assets/repl:54dfea8f-70bd-44f2-8bdd-f80ac0507d41/10b75d0e-0fab-448a-b752-5612ef10af77/d58619d4-2e41-43f6-8995-145eb4bd60fa"
+storage_version_token = "1792147506349197"
+content_type = "application/octet-stream"
