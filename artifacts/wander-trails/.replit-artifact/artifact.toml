@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Wander Trails"
+description = "A cheerful, responsive travel agency website for discovering domestic and international trips, comparing sample packages, and sending booking enquiries."
+version = "1.0.0"
+id = "artifacts/wander-trails"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22858
+
+[services.development]
+run = "pnpm --filter @workspace/wander-trails run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/wander-trails", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/wander-trails/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22858"
+BASE_PATH = "/"

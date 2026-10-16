@@ -1,15 +1,18 @@
-# [Project name]
+# Wander Trails
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A responsive travel agency website for exploring sample holiday packages and sending trip enquiries.
 
 ## Run & Operate
 
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
+- `pnpm --filter @workspace/wander-trails run dev` — run the Wander Trails website
 - `pnpm run typecheck` — full typecheck across all packages
 - `pnpm run build` — typecheck + build all packages
 - `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from the OpenAPI spec
 - `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
 - Required env: `DATABASE_URL` — Postgres connection string
+
+The package catalogue, itinerary details, sample ratings, and displayed agency contact information are demo content. Enquiry submissions are stored in PostgreSQL; no email notification, booking confirmation, or online payment is connected.
 
 ## Stack
 
@@ -22,15 +25,22 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/wander-trails/src/pages/` — home, package catalogue, package details, contact, and not-found pages
+- `artifacts/wander-trails/src/data/packages.ts` — sample destinations and itinerary content
+- `artifacts/wander-trails/src/components/EnquiryForm.tsx` — validated enquiry form
+- `lib/api-spec/openapi.yaml` — source of truth for the enquiry API
+- `artifacts/api-server/src/routes/enquiries.ts` — enquiry submission endpoint
+- `lib/db/src/schema/travel-enquiries.ts` — persisted enquiry schema
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The catalogue content is local sample data; only enquiry submissions are persisted.
+- “Book Now” deliberately opens an enquiry flow. It does not confirm a reservation or take payment.
+- Prices, ratings, testimonials, and agency contact details are explicitly marked as sample content.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+Visitors can browse and filter six domestic and international trip samples, view itinerary details, and submit custom or package enquiries. Enquiries are saved to the development database for review.
 
 ## User preferences
 
