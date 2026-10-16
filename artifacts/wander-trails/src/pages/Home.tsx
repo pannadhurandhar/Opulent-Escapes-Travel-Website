@@ -38,7 +38,7 @@ export default function Home() {
           <label className="wide-search"><span className="field-label"><MapPin size={12} style={{ verticalAlign: 'middle' }} /> Where to?</span>
             <select className="field-control" value={destination} onChange={e => setDestination(e.target.value)} data-testid="search-destination"><option value="">Any destination</option>{destinations.map(place => <option key={place}>{place}</option>)}</select>
           </label>
-          <label><span className="field-label">When</span><input className="field-control" type="month" value={dates} onChange={e => setDates(e.target.value)} aria-label="Preferred travel month" /></label>
+          <label><span className="field-label">When</span><input className="field-control" type="date" value={dates} onChange={e => setDates(e.target.value)} aria-label="Preferred travel date" data-testid="search-date" /></label>
           <label><span className="field-label">Travellers</span><select className="field-control" value={travellers} onChange={e => setTravellers(e.target.value)}><option value="1">1 traveller</option><option value="2">2 travellers</option><option value="3">3 travellers</option><option value="4">4 travellers</option><option value="5">5+ travellers</option></select></label>
           <button type="button" className="button-secondary" onClick={findTrips} data-testid="button-search-trips"><Search size={17} /> Find trips</button>
         </div>
