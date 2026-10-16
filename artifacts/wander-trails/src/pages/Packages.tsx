@@ -54,6 +54,6 @@ export default function Packages() {
         <p className="form-note" style={{ marginTop: 22 }}>All listed amounts are indicative per-person estimates in INR and may change with dates, group size and availability. An enquiry does not confirm a trip or collect payment.</p>
       </div>
     </div></section>
-    <section className="section-tight" style={{ background: '#edf3e9' }}><div className="container-wide" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}><div><span className="eyebrow">Not seeing your exact trip?</span><h2 style={{ font: '600 32px var(--app-font-serif)', color: '#193b39', margin: '8px 0' }}>We can start with a blank map.</h2></div><Link to="/contact" className="button-primary" style={{ textDecoration: 'none' }}>Plan a custom itinerary <ArrowRight size={16} /></Link></div></section>
+    <section className="section-tight" style={{ background: '#edf3e9' }}><div className="container-wide" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}><div><span className="eyebrow">Not seeing your exact trip?</span></div><Link to="/contact" className="button-primary" style={{ textDecoration: 'none' }}>Plan a custom itinerary <ArrowRight size={16} /></Link></div></section>
   </main>;
 }
