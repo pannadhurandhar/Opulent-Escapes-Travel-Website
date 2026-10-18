@@ -29,7 +29,7 @@ export default function Packages() {
   const chooseDestination = (value: string) => { const next = new URLSearchParams(params); value ? next.set('destination', value) : next.delete('destination'); setParams(next); };
   const clearFilters = () => { setQuery(''); setRegion('Any'); setDuration('Any'); setSort('featured'); setMinPrice(''); setMaxPrice(''); setParams({}); };
   return <main>
-    <PageMeta title="Travel Packages | Wander Trails" description="Compare holiday packages across Kerala, Goa, Manali, Dubai, Bali and Thailand. Filter by destination, trip length and indicative INR price." />
+    <PageMeta title="Travel Packages | Opulent Escapes" description="Compare holiday packages across Kerala, Goa, Manali, Dubai, Bali and Thailand. Filter by destination, trip length and indicative INR price." />
     <section className="page-hero"><div className="container-wide"><span className="eyebrow">A good place to get going</span><h1 className="page-title">Find your kind of elsewhere.</h1><p>Browse thoughtful itineraries for sunny coastlines, green hills and everywhere in between. Prices are indicative estimates in INR and final costs depend on your travel details.</p></div></section>
     <section className="section-tight"><div className="container-wide catalog-layout">
       <aside className="filter-panel" aria-label="Trip filters">

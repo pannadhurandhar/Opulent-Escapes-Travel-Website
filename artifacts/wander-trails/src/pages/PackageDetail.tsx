@@ -9,7 +9,7 @@ export default function PackageDetail() {
   const trip = packages.find(item => item.slug === slug);
   if (!trip) return <main className="section"><div className="container-wide empty-state"><h1>That trip has wandered off.</h1><p>Try the full trip collection instead.</p><Link to="/packages" className="button-secondary" style={{ textDecoration: 'none' }}>Browse trips <ArrowRight size={15} /></Link></div></main>;
   return <main>
-    <PageMeta title={`${trip.title} | Wander Trails`} description={`${trip.description} View the itinerary, inclusions and exclusions, and send a no-obligation enquiry.`} />
+    <PageMeta title={`${trip.title} | Opulent Escapes`} description={`${trip.description} View the itinerary, inclusions and exclusions, and send a no-obligation enquiry.`} />
     <section className="detail-hero"><img className="detail-hero-photo" src={trip.image} alt={trip.imageAlt} /><div className="container-wide detail-hero-content"><Link to="/packages" style={{ color: '#e2efe8', textDecoration: 'none', fontSize: 13 }}><ArrowLeft size={14} style={{ verticalAlign: 'middle', marginRight: 6 }} /> All trips</Link><div className="eyebrow" style={{ color: '#f5b07b', marginTop: 25 }}>{trip.tag} · {trip.destination}</div><h1>{trip.title}</h1><span><Clock3 size={15} style={{ verticalAlign: 'middle', marginRight: 6 }} />{trip.duration}</span></div></section>
     <section className="section-tight"><div className="container-wide detail-layout">
       <article className="detail-content">

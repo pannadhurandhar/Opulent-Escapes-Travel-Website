@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "Wander Trails"
+title = "Opulent Escapes"
 description = "A cheerful, responsive travel agency website for discovering domestic and international trips, comparing sample packages, and sending booking enquiries."
 version = "1.0.0"
 id = "artifacts/wander-trails"

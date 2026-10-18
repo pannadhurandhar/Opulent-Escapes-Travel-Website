@@ -23,7 +23,7 @@ export default function Home() {
   };
   return <>
     <main>
-      <PageMeta title="Wander Trails | Your Next Adventure, Planned" description="Discover thoughtful Kerala, Goa, Manali, Dubai, Bali and Thailand trips. Browse holiday packages with indicative INR pricing and send a no-obligation enquiry." />
+      <PageMeta title="Opulent Escapes | Your Next Adventure, Planned" description="Discover thoughtful Kerala, Goa, Manali, Dubai, Bali and Thailand trips. Browse holiday packages with indicative INR pricing and send a no-obligation enquiry." />
       <section className="hero">
         <div className="container-wide"><div className="hero-copy">
           <span className="eyebrow" style={{ color: '#f2ad78' }}>For the good days you’ll talk about</span>
@@ -67,7 +67,7 @@ export default function Home() {
 
       <section className="section">
         <div className="container-wide why-grid">
-          <div className="why-copy"><span className="eyebrow">The Wander Trails way</span><h2>Travel should feel like a deep breath.</h2><p style={{ color: '#5d766f', lineHeight: 1.7 }}>A real person to talk to. A plan made for your people. No rushed checklists or one-size-fits-all itineraries.</p><Link to="/contact" className="button-secondary" style={{ textDecoration: 'none', marginTop: 10 }}>Tell us what you love <ArrowRight size={16} /></Link></div>
+          <div className="why-copy"><span className="eyebrow">The Opulent Escapes way</span><h2>Travel should feel like a deep breath.</h2><p style={{ color: '#5d766f', lineHeight: 1.7 }}>A real person to talk to. A plan made for your people. No rushed checklists or one-size-fits-all itineraries.</p><Link to="/contact" className="button-secondary" style={{ textDecoration: 'none', marginTop: 10 }}>Tell us what you love <ArrowRight size={16} /></Link></div>
           <div className="reason-list">
             <Reason icon={<HeartHandshake size={20} />} title="People-first planning" body="We listen before we suggest. Every trip starts with what matters to you." />
             <Reason icon={<Compass size={20} />} title="Local know-how" body="Thoughtful stays, trusted local partners and room for happy detours." />
